@@ -1,0 +1,322 @@
+@import url("animation.css") screen;
+body {
+	background-color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height:100%;
+	width: 100%;
+}
+div, ul {
+	border-style: solid;
+	border-width: 1px;
+
+}
+a {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#ffffff;
+}
+/*Style Menu nav*/
+ul {
+	list-style: outside none none;
+}
+
+ul#nav{
+	position: absolute;
+	top: 136px;
+	right: 0;
+
+}
+
+ul#nav li{
+	float: left;
+	margin: 0 0 0 2px;
+
+}
+
+ul#nav li a{
+	background: url("img/headerlink.png") repeat-x;
+	border-radius: 20px;
+	color: #fff;
+	display: block;
+	font: 14px Arial bold;
+	height: 37px;
+	padding: 19px 10px 0;
+	text-align: center;
+
+}
+
+ul#nav li a:hover, ul#nav li a:active {
+	background: url("img/headerlink_active.png") repeat-x;
+	color: #f19f05;
+}
+
+/*End style menu nav*/
+h1#logo {
+	width: 356px;
+	height: 176px;
+	position: relative;
+	left: -360px;
+	overflow: hidden;
+	
+
+}
+h1#logo a{
+	background: url("img/logo.png") no-repeat;
+	display: block;
+	padding-top: 176px;
+	
+	
+}
+
+div#wrapper {
+	background: url("img/bg_footer.jpg") repeat scroll;
+	min-height: 1800px;
+	min-width: 1010px;
+
+}
+
+div#wrapperplus{
+	background: url("img/bg_pattern.jpg") repeat scroll;
+}
+
+div#wrapper2{
+	background: url("img/bg_top_main.jpg") repeat-x scroll;
+	height: 100%;
+}
+
+div#wrapper3 {
+	text-align: left;
+	margin: 0 auto;
+	width: 1010px;
+	height: 564px;
+	background: url("img/bg_girl.jpg") no-repeat;
+}
+div#header {
+	padding-left: 350px;
+	position: relative;
+}
+
+div#header-right {
+	bottom: 30px;
+    float: right;
+    height: 214px;
+    margin-right: 20px;
+    margin-top: 120px;
+    width: 300px;
+}
+/*Slider style*/
+div#slider{
+   	background: #000;
+   	border: 5px solid #eaeaea;
+   	box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+   	height: 320px;
+   	width: 680px;
+   	margin: 10px auto 0;
+   	overflow: visible;
+   	position: relative;
+	
+}
+
+#mask {
+	overflow:hidden;
+	height:320px;
+}
+#slider ul {
+	margin:0;
+	padding:0;
+	position:relative;
+}
+#slider li {
+	width:680px;
+	height:320px;
+	position:absolute;
+	top:-325px;
+	list-style:none;
+}
+
+#slider li.firstanimation {
+	-moz-animation:cycle 25s linear infinite;	
+	-webkit-animation:cycle 25s linear infinite;		
+}
+#slider li.secondanimation {
+	-moz-animation:cycletwo 25s linear infinite;
+	-webkit-animation:cycletwo 25s linear infinite;		
+}
+#slider li.thirdanimation {
+	-moz-animation:cyclethree 25s linear infinite;
+	-webkit-animation:cyclethree 25s linear infinite;		
+}
+#slider li.fourthanimation {
+	-moz-animation:cyclefour 25s linear infinite;
+	-webkit-animation:cyclefour 25s linear infinite;		
+}
+#slider li.fifthanimation {
+	-moz-animation:cyclefive 25s linear infinite;
+	-webkit-animation:cyclefive 25s linear infinite;		
+}
+
+#slider .tooltip {
+	background:rgba(0,0,0,0.7);
+	width:300px;
+	height:60px;
+	position:relative;
+	bottom:75px;
+	left:-320px;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;  
+}
+#slider .tooltip h1 {
+	color:#fff;
+	font-size:24px;
+	font-weight:300;
+	line-height:60px;
+	padding:0 0 0 20px;
+}
+#slider li#first:hover .tooltip, 
+#slider li#second:hover .tooltip, 
+#slider li#third:hover .tooltip, 
+#slider li#fourth:hover .tooltip, 
+#slider li#fifth:hover .tooltip {
+	left:0px;
+}
+#slider:hover li, 
+#slider:hover .progress-bar {
+	-moz-animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+}
+
+/* PROGRESS BAR */
+.progress-bar { 
+	position:relative;
+	top:-5px;
+	width:680px; 
+	height:5px;
+	background:#000;
+	-moz-animation:fullexpand 25s ease-out infinite;
+	-webkit-animation:fullexpand 25s ease-out infinite;
+}
+
+/*End Slider style*/
+
+div#content{
+	height: auto;
+	margin: 10px auto;
+	width: 1010px;
+	position: relative;
+}
+/*Column-left*/
+div#column-left{
+	float: left;
+    height: 300px;
+    margin: 5px 0 0 5px;
+    width: 240px;
+}
+
+div>h4 {
+	background: url("img/block_title.png") no-repeat;
+	color: #fff;
+	font: bold 16px "Arial";
+	height: 40px;
+	padding: 19px 0 0 20px;
+	text-transform: uppercase;
+}
+
+.block-content{
+	padding: 0 20px 20px 0;
+}
+
+div#categories-block ul li {
+	padding: 13px 0 0;
+	position: relative;
+}
+
+div#categories-block ul li a{
+	background: url("img/bullet_cat.png") no-repeat;
+	color: #fecb04;
+	display: block;
+	font: 13px "Arial";
+	height: 17px;
+	padding: 0 0 0 25px;
+	text-decoration: none;
+	width: 165px;
+}
+
+div#categories-block ul li a:hover, div#categories-block ul li a:active {
+	background: url("img/bullet_cat_active.png") no-repeat;
+	color: #fff;
+	font-weight: bold;
+}
+
+/*End column-left*/
+
+/*Column-right*/
+div#column-right{
+	float: right;
+    height: 300px;
+    margin: 5px 5px 0 0;
+    width: 720px;
+}
+
+div#product-container ul{
+		width: 720px;
+		overflow: hidden;
+		padding-left: 2px;
+}
+
+div#product-container ul li{
+	float: left;
+	height: 326px;
+	margin: 10px 10px 0 0;
+	position: relative;
+	width: 230px;
+}
+
+div#product-container ul li a.product-image{
+	background: url("img/mask_home_bg.png") no-repeat;
+	display: block;
+	height: 183px;
+	position: relative;
+	width: 230px;
+}
+
+div#product-container ul li h5{
+	height: 15px;
+	padding: 6px 10px 0;
+	text-transform: none; 
+	color: #fbe104;
+	font: bold 12px "Arial";
+	text-align: center;
+
+}
+
+div#product-container ul li span.price{
+	color: #f9ba04;
+	display: block;
+	font: bold 24px "Arial";
+	padding: 0 10px;
+	text-align: center;
+}
+
+/*End Column-right*/
+div#footer_wrapper{
+	background: url("img/bg_footer.jpg") repeat-x;
+	height: 70px;
+
+}
+
+div#footer{
+	width: 980px;
+	margin: 0 auto;
+}
+
+.p_footer{
+	color: #ffffff;
+	font: 13px Arial;
+	padding: 24px 0 0;
+}
+
+p>span{
+	color:#fec804; 
+}
